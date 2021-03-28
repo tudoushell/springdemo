@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>mybatis-plus-demo</module>
+        <module>spring-data-jpa</module>
     </modules>
 
     <properties>

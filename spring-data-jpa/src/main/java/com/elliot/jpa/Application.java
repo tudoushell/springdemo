@@ -1,15 +1,16 @@
-package com.elliot.mybatis;
+package com.elliot.jpa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 
 /**
- * @author: zhou
- * @date: 2020/5/21
+ * 开启缓存
  */
+@EnableCaching
 @SpringBootApplication
-public class MybatisPlusDemo {
+public class Application {
   public static void main(String[] args) {
-    SpringApplication.run(MybatisPlusDemo.class, args);
+    SpringApplication.run(Application.class, args);
   }
 }
