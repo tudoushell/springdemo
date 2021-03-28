@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    # 连接超时时间（毫秒）
+    timeout: 10000
+    # Lettuce
+    lettuce:
+      pool:
+        # 连接池最大连接数（使用负值表示没有限制）
+        max-active: 8
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: 10000
+        # 连接池中的最大空闲连接
+        max-idle: 8
+        # 连接池中的最小空闲连接
+        min-idle: 0
+      # 关闭超时时间
+      shutdown-timeout: 100
+    cache:
+        time-to-live: 43200 #cache缓存时间12小时
+
